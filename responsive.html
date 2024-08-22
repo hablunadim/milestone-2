@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REsponsive Website</title>
+    <style>
+        body{
+            border: 2px solid skyblue;
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        .image-container{
+            display: flex;
+        }
+        .image-container div{
+            width: 50%;
+        }
+        .image-container img{
+            width: 100%;
+        }
+        @media screen and (max-width:576px) {
+            .image-container{
+                flex-direction: column;
+            }
+            .image-container div{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ol>
+            <li>Viewport meta tag</li>
+            <li>CSS Relative unit</li>
+            <li>body max-width and horizontal center align</li>
+            <li>imagefluid</li>
+            <li>rwo column flex and use media query with flex diriction column</li>
+            <li>multi column: grid layout</li>
+            <li>menu responsive:will need Javascipt</li>
+        </ol>
+    </header>
+    <main>
+        <div class="image-container">
+            <div>
+                <img src="image/food2.webp" alt="">
+            </div>
+            <div>
+                <img src="image/pakhi.webp" alt="">
+            </div>
+        </div>
+        
+    </main>
+</body>
+</html>
